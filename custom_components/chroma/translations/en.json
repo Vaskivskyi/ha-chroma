@@ -1,0 +1,33 @@
+{
+    "config": {
+        "step": {
+            "discovery": {
+                "description": "How to find your device",
+                "data": {
+                    "host": "Hostname / IP address"
+                }
+            },
+            "devices": {
+                "description": "Devices to control",
+                "data": {
+                    "devices": "Select devices"
+                }
+            },
+            "layout": {
+                "description": "Keyboard layout",
+                "data": {
+                    "layout": "Select keyboard layout"
+                }
+            },
+            "name": {
+                "description": "Rename your device",
+                "data": {
+                    "name": "Leave blank to use device model as the name"
+                }
+            }
+        },
+        "error": {
+            "cannot_resolve_host": "Cannot resolve hostname. Try with the IP address"
+        }
+    }
+}

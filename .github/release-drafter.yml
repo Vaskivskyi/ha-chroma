@@ -1,0 +1,28 @@
+
+categories:
+  - title: ":boom: Breaking Changes"
+    label: "breaking"
+  - title: ":rocket: Features"
+    label: "enhancement"
+  - title: ":bug: Fixes"
+    label: "bug"
+  - title: ":racehorse: Performance"
+    label: "performance"
+  - title: ":book: Translation"
+    label: "translation"
+  - title: ":rotating_light: Testing"
+    label: "testing"
+  - title: ":books: Documentation"
+    label: "documentation"
+  - title: ":hammer: Refactoring"
+    label: "refactoring"
+  - title: ":package: Dependencies"
+    labels: 
+      - "dependencies"
+      - "build"
+
+template: |
+  ## Changes
+
+  $CHANGES
+
