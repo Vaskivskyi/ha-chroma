@@ -13,6 +13,17 @@ Please, refer to the GitHub [Readme](https://github.com/Vaskivskyi/ha-chroma/) f
 3. In the Home Assistant UI:
    `Configuration -> Devices & Services -> Integrations -> Add integration -> Chroma`
 
+## Usage
+
+To connect you need to provide the following data:
+- IP address or hostname
+- Which devices you want to control (e.g. `chromalink`, `headset`, `keyboard`, `keypad`, `mouse`, `mousepad`)
+- Layout of your keyboard (if the `keyboard` option is selected)
+
+#### Lights
+
+Integration provides a light entity per each device selected during the configuration process. Every entity supports `rgb_color` and `brightness` attributes.
+
 ---
 
 <a href="https://www.buymeacoffee.com/vaskivskyi" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;"></a>
