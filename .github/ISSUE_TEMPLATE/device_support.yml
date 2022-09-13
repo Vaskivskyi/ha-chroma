@@ -8,10 +8,8 @@ body:
   - type: markdown
     attributes:
       value: >
-        Please, only submit device support using this form. If you would like to report a bug, use the [bug report][forms] form.
-        To submit a feature request, use the [feature request][forms] form.
-
-        [forms]: https://github.com/Vaskivskyi/ha-chroma/issues/new/choose
+        Please, only submit device support using this form. If you would like to report a bug, use the [bug report](https://github.com/Vaskivskyi/ha-chroma/issues/new/choose) form.
+        To submit a feature request, use the [feature request](https://github.com/Vaskivskyi/ha-chroma/issues/new/choose) form.
   - type: textarea
     attributes:
       label: Anything you want to mention?
