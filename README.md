@@ -17,7 +17,20 @@ Copy content of `custom_components/chroma/` to `custom_components/chroma/` in yo
 
 ## Usage
 
-This section will be ready soon.
+After Chroma is installed, you can add your device from Home Assistant UI.
+
+[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=chroma)
+
+To connect you need to provide the following data:
+- IP address or hostname
+- Which devices you want to control (e.g. `chromalink`, `headset`, `keyboard`, `keypad`, `mouse`, `mousepad`)
+- Layout of your keyboard (if the `keyboard` option is selected)
+
+[![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)
+
+#### Lights
+
+Integration provides a light entity per each device selected during the configuration process. Every entity supports `rgb_color` and `brightness` attributes.
 
 ## Support the integration
 
