@@ -1,0 +1,100 @@
+name: Bug report
+description: Report an issue with Chroma Integration
+title: "[Bug] "
+labels: ["bug"]
+assignees:
+  - vaskivskyi
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Please, only report bugs using this form. If you would like to submit a feature request, use the [feature request][forms] form.
+        To report that some device(s) work well, use the [device support][forms] form.
+
+        [forms]: https://github.com/Vaskivskyi/ha-chroma/issues/new/choose
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: The problem
+      description: >
+        Please, describe the issue. The more details you provide, the easier it would be to understand the issue.
+
+        Keep in mind, that the description should also be clear, so I will be able to help you with it.
+  - type: markdown
+    attributes:
+      value: >
+        # Environment and device
+  - type: input
+    id: device(s)
+    validations:
+      required: false
+    attributes:
+      label: Your device(s) with a problem
+      description: >
+        Please, put in the model of each device, if the issue is device-related.
+      placeholder: 
+  - type: input
+    id: firmware_version
+    validations:
+      required: true
+    attributes:
+      label: Firmware version
+      description: >
+        Please, provide the full version of the ChromaSDK, as shown in HA, e.g. `3.28.01`
+      placeholder: 3.28.01
+  - type: input
+    id: integration_version
+    validations:
+      required: true
+    attributes:
+      label: Integration version with the issue
+      description: >
+        The version of the integration with the issue
+  - type: dropdown
+    id: integration_method
+    validations:
+      required: true
+    attributes:
+      label: Method of the integration installation
+      description: >
+        Did you install the integration from the HACS or manually installed it?
+      options:
+        - HACS
+        - Manual (stable branch)
+        - Manual (main branch)
+  - type: input
+    id: version
+    validations:
+      required: true
+    attributes:
+      label: What version and type of Home Assistant installation do you use
+      placeholder: Core 2022.9.0
+      description: >
+        Can be found in: [Settings -> About](https://my.home-assistant.io/redirect/info/).
+
+        [![Open your Home Assistant instance and show your Home Assistant version information.](https://my.home-assistant.io/badges/info.svg)](https://my.home-assistant.io/redirect/info/)
+  - type: markdown
+    attributes:
+      value: >
+        # Details
+  - type: textarea
+    attributes:
+      label: Is there anything useful in the logs?
+      description: >
+        By default, Home Assistant shows only logs on levels `error` and `warning`.
+        If there is nothing on these levels, you may enable `debug` logging for the integration.
+        To do this, add the following YAML code to your `configuration.yaml`
+
+        logger:
+          logs:
+            custom_components.chroma: debug
+            aiochroma: debug
+
+        Debug logging highly increases the log file size. Don't keep it on for a long time, if not needed.
+      render: txt
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: >
+        If you have any additional information for us, use the field below.
