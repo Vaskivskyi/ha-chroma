@@ -14,7 +14,7 @@ body:
     validations:
       required: true
     attributes:
-      label: The problem
+      label: The idea
       description: >
         Please, describe your idea. The more details you provide, the easier it would be to understand it.
 
