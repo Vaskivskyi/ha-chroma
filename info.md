@@ -17,12 +17,20 @@ Please, refer to the GitHub [Readme](https://github.com/Vaskivskyi/ha-chroma/) f
 
 To connect you need to provide the following data:
 - IP address or hostname
-- Which devices you want to control (e.g. `chromalink`, `headset`, `keyboard`, `keypad`, `mouse`, `mousepad`)
+- Which devices do you want to control (e.g. `chromalink`, `headset`, `keyboard`, `keypad`, `mouse`, `mousepad`)
 - Layout of your keyboard (if the `keyboard` option is selected)
 
 #### Lights
 
-Integration provides a light entity per each device selected during the configuration process. Every entity supports `rgb_color` and `brightness` attributes.
+The integration provides a light entity per each device selected during the configuration process. Every entity supports `rgb_color` and `brightness` attributes.
+
+#### Services
+
+The `chroma.service_send_message` service allows sending any string message to your per-key RGB keyboard. The message will be displayed symbol by symbol.
+
+Currently, the following keyboard layouts are supported: `EN_US`.
+
+You can still use the service if your keyboard layout is not yet supported. E.g. you can change your string from `Lazy fox was here` to `Layz fox was here` to properly be displayed with the German layout.
 
 ---
 
