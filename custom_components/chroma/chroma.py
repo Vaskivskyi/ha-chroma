@@ -8,11 +8,12 @@ from typing import Any, Awaitable, Callable, TypeVar
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import CONF_HOST, CONF_NAME
-from homeassistant.core import CALLBACK_TYPE, HomeAssistant, callback
+from homeassistant.core import CALLBACK_TYPE, HomeAssistant, ServiceCall, callback
 from homeassistant.exceptions import ConfigEntryNotReady
 from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
 
+from aiochroma import Color
 from .bridge import ChromaBridge
 from .const import CONF_REQ_RELOAD, DEFAULT_SCAN_INTERVAL, DOMAIN, KEY_COORDINATOR
 
@@ -106,6 +107,36 @@ class Chroma:
             await self._api.async_connect()
         except OSError as ex:
             raise ConfigEntryNotReady from ex
+
+        # Services -->
+        async def async_service_send_message(service: ServiceCall):
+            """Send message to the keyboard."""
+
+            data = service.data
+
+            _LOGGER.debug(f"Calling service Send Message with parameters: {data}")
+
+            (r, g, b) = data.get("color")
+            color = Color(r, g, b)
+            (r, g, b) = data.get("background")
+            background = Color(r, g, b)
+
+            await self._api._api.async_keyboard_sequence(
+                message=data.get("message"),
+                color=color,
+                background=background,
+                brightness=data.get("brightness"),
+                tail=data.get("tail", 0),
+                repeats=data.get("repeats"),
+                spacing=data.get("spacing"),
+                sleep=data.get("sleep"),
+            )
+
+        if "keyboard" in self._options["devices"]:
+            self.hass.services.async_register(
+                DOMAIN, "service_send_message", async_service_send_message
+            )
+        # <-- Services
 
         self._firmware = self._api._identity["version"]
 
