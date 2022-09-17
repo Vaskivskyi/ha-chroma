@@ -29,5 +29,37 @@
         "error": {
             "cannot_resolve_host": "Cannot resolve hostname. Try with the IP address"
         }
+    },
+    "options": {
+        "step": {
+            "options": {
+                "description": "Select configurations to change",
+                "data": {
+                    "devices": "Devices to control",
+                    "layout": "Keyboard layout (only if keyboard control is enabled)"
+                }
+            },
+            "devices": {
+                "description": "Devices to control",
+                "data": {
+                    "devices": "Select devices"
+                }
+            },
+            "layout": {
+                "description": "Keyboard layout",
+                "data": {
+                    "layout": "Select keyboard layout"
+                }
+            },
+            "confirmation": {
+                "description": "Please, reload the integration",
+                "data": {
+                    "confirm": "I understand, that I need to reload the integration to apply the new configuration. To do this, I will click the integration menu (3 dots) and press 'Reload'"
+                }
+            }
+        },
+        "error": {
+            "not_confirmed": "You have to confirm"
+        }
     }
 }

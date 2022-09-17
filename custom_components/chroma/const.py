@@ -12,6 +12,7 @@ PLATFORMS = [
 ]
 KEY_COORDINATOR = "coordinator"
 
+CONF_CONFIRM = "confirm"
 CONF_DEVICES = "devices"
 CONF_LAYOUT = "layout"
 CONF_REQ_RELOAD = [
