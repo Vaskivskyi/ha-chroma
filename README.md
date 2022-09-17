@@ -9,11 +9,13 @@
 
 #### HACS
 
-You can add this repository (https://github.com/Vaskivskyi/ha-chroma) to your HACS as a custom repository.
+Chroma will be added to the default of HACS as soon as [this PR](https://github.com/hacs/default/pull/1500) is merged.
+
+Meanwhile, you can add this repository (https://github.com/Vaskivskyi/ha-chroma) to your HACS as a custom repository.
 
 #### Manual
 
-Copy content of `custom_components/chroma/` to `custom_components/chroma/` in your Home Assistant folder.
+Copy content of the [stable branch](https://github.com/Vaskivskyi/ha-chroma/tree/stable) `custom_components/chroma/` to `custom_components/chroma/` in your Home Assistant folder.
 
 ## Usage
 
@@ -23,14 +25,22 @@ After Chroma is installed, you can add your device from Home Assistant UI.
 
 To connect you need to provide the following data:
 - IP address or hostname
-- Which devices you want to control (e.g. `chromalink`, `headset`, `keyboard`, `keypad`, `mouse`, `mousepad`)
+- Which devices do you want to control (e.g. `chromalink`, `headset`, `keyboard`, `keypad`, `mouse`, `mousepad`)
 - Layout of your keyboard (if the `keyboard` option is selected)
 
 [![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)
 
 #### Lights
 
-Integration provides a light entity per each device selected during the configuration process. Every entity supports `rgb_color` and `brightness` attributes.
+The integration provides a light entity per each device selected during the configuration process. Every entity supports `rgb_color` and `brightness` attributes.
+
+#### Services
+
+The `chroma.service_send_message` service allows sending any string message to your per-key RGB keyboard. The message will be displayed symbol by symbol.
+
+Currently, the following keyboard layouts are supported: `EN_US`.
+
+You can still use the service if your keyboard layout is not yet supported. E.g. you can change your string from `Lazy fox was here` to `Layz fox was here` to properly be displayed with the German layout.
 
 ## Support the integration
 
