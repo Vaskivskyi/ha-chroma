@@ -36,7 +36,7 @@ The integration provides a light entity per each device selected during the conf
 
 #### Services
 
-The `chroma.service_send_message` service allows sending any string message to your per-key RGB keyboard. The message will be displayed symbol by symbol.
+The `chroma.service_send_message` service allows sending any string message to your per-key RGB keyboard. The message will be displayed symbol by symbol. Please, refer to the [how-to documentation](https://github.com/Vaskivskyi/ha-chroma/blob/main/docs/how-to.md) for more details.
 
 Currently, the following keyboard layouts are supported: `EN_US`.
 
