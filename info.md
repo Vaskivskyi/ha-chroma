@@ -20,6 +20,10 @@ To connect you need to provide the following data:
 - Which devices do you want to control (e.g. `chromalink`, `headset`, `keyboard`, `keypad`, `mouse`, `mousepad`)
 - Layout of your keyboard (if the `keyboard` option is selected)
 
+#### Allow the connection (adjust your firewall settings)
+
+In order to use the integration, you might need to adjust your firewall settings on the device with Chroma devices. Please, allow the incoming `TCP` connection on port `54236` from your HA instance. In case, this connection is not allowed, the integration will not be able to connect and might be stuck in the `configuring` state for an extended period.
+
 #### Lights
 
 The integration provides a light entity per each device selected during the configuration process. Every entity supports `rgb_color` and `brightness` attributes.
