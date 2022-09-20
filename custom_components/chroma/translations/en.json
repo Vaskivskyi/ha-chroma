@@ -22,7 +22,7 @@
             "name": {
                 "description": "Rename your device",
                 "data": {
-                    "name": "Leave blank to use device model as the name"
+                    "name": "Leave blank to use `ChromaSDK` as the name"
                 }
             }
         },
