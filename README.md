@@ -9,9 +9,8 @@
 
 #### HACS
 
-Chroma will be added to the default of HACS as soon as [this PR](https://github.com/hacs/default/pull/1500) is merged.
-
-Meanwhile, you can add this repository (https://github.com/Vaskivskyi/ha-chroma) to your HACS as a custom repository.
+You can add this repository to your HACS:
+`HACS -> Integrations -> Explore & Download Repositories -> Chroma`
 
 #### Manual
 
