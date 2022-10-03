@@ -47,6 +47,54 @@ Currently, the following keyboard layouts are supported: `EN_US`.
 
 You can still use the service if your keyboard layout is not yet supported. E.g. you can change your string from `Lazy fox was here` to `Layz fox was here` to properly be displayed with the German layout.
 
+## Supported devices
+
+This list provides only the models tested by me or other users. If your device is not listed yet but works well, please open a [Device Support](https://github.com/Vaskivskyi/ha-chroma/issues/new/choose) ticket with the device model and it will be added to the list.
+
+<table>
+
+<tr><th>Group</th><th>Devices</th></tr>
+
+<tr><td>Chromalink</td><td>
+
+`Chroma Addressable RGB Controller`<br />
+Services: `AuraConnect`
+
+</td></tr>
+
+<tr><td>Headset</td><td>
+
+`Kraken X USB`
+
+</td></tr>
+
+<tr><td>Keyboard</td><td>
+
+`BlackWidow Chroma`, `BlackWidow V3 Pro`
+
+</td></tr>
+
+<tr><td>Keypad</td><td>
+
+
+
+</td></tr>
+
+<tr><td>Mouse</td><td>
+
+`DeathAdder V2 Pro`, `Mamba Tournament Edition`, `Viper Ultimate` (+ `Mouse Dock`)
+
+</td></tr>
+
+<tr><td>Mousepad</td><td>
+
+`Firefly V2`<br />
+`Mouse Bungee V3 Chroma`
+
+</td></tr>
+
+</table>
+
 ## Support the integration
 
 This integration is a free-time project. If you like it, you can support me by buying a coffee.
