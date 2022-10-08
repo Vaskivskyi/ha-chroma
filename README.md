@@ -53,7 +53,7 @@ Some older versions of the Chroma SDK might be not compatible with the integrati
 
 <table>
 <tr><th>Supported</th><th>Not supported</th></tr>
-<tr><td>3.28.01</td><td>3.27.04 (issue #22)</td></tr>
+<tr><td>3.28.01</td><td>3.27.04 (issue <a href="https://github.com/Vaskivskyi/ha-chroma/issues/22">#22</a>)</td></tr>
 </table>
 
 ## Supported devices
