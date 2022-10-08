@@ -47,6 +47,15 @@ Currently, the following keyboard layouts are supported: `EN_US`.
 
 You can still use the service if your keyboard layout is not yet supported. E.g. you can change your string from `Lazy fox was here` to `Layz fox was here` to properly be displayed with the German layout.
 
+## Supported SDK versions
+
+Some older versions of the Chroma SDK might be not compatible with the integration. Unfortunately, I do not have a possibility to test all the versions, so the following table contain only those I know about.
+
+<table>
+<tr><th>Supported</th><th>Not supported</th></tr>
+<tr><td>3.28.01</td><td>3.27.04 (issue <a href="https://github.com/Vaskivskyi/ha-chroma/issues/22">#22</a>)</td></tr>
+</table>
+
 ## Supported devices
 
 This list provides only the models tested by me or other users. If your device is not listed yet but works well, please open a [Device Support](https://github.com/Vaskivskyi/ha-chroma/issues/new/choose) ticket with the device model and it will be added to the list.
