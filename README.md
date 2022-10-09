@@ -33,7 +33,7 @@ To connect you need to provide the following data:
 
 #### Allow the connection (adjust your firewall settings)
 
-In order to use the integration, you might need to adjust your firewall settings on the device with Chroma devices. Please, allow the incoming `TCP` connection on port `54236` from your HA instance. In case, this connection is not allowed, the integration will not be able to connect and might be stuck in the `configuring` state for an extended period.
+To use the integration, you might need to adjust your firewall settings on the device with Chroma devices. Please, allow the incoming `TCP` connection on port `54236` from your HA instance. In case, this connection is not allowed, the integration will not be able to connect and might be stuck in the `configuring` state for an extended period.
 
 #### Lights
 
@@ -49,7 +49,7 @@ You can still use the service if your keyboard layout is not yet supported. E.g.
 
 ## Supported SDK versions
 
-Some older versions of the Chroma SDK might be not compatible with the integration. Unfortunately, I do not have a possibility to test all the versions, so the following table contain only those I know about.
+Some older versions of the Chroma SDK might be not compatible with the integration. Unfortunately, I cannot test all the versions, so the following table contains only those I know about.
 
 <table>
 <tr><th>Supported</th><th>Not supported</th></tr>
@@ -60,6 +60,8 @@ Some older versions of the Chroma SDK might be not compatible with the integrati
 
 This list provides only the models tested by me or other users. If your device is not listed yet but works well, please open a [Device Support](https://github.com/Vaskivskyi/ha-chroma/issues/new/choose) ticket with the device model and it will be added to the list.
 
+Some of the devices might be in the group which you would not expect. This is not related to the integration but to the Chroma SDK.
+
 <table>
 
 <tr><th>Group</th><th>Devices</th></tr>
@@ -67,31 +69,34 @@ This list provides only the models tested by me or other users. If your device i
 <tr><td>Chromalink</td><td>
 
 `Chroma Addressable RGB Controller`<br />
+Mousepads: `Goliathus Extended Chroma`<br/>
 Services: `AuraConnect`
 
 </td></tr>
 
 <tr><td>Headset</td><td>
 
-`Kraken X USB`
+`Kraken 7.1 V2`, `Kraken X USB`
 
 </td></tr>
 
 <tr><td>Keyboard</td><td>
 
-`BlackWidow Chroma`, `BlackWidow V3 Pro`
+`BlackWidow Chroma`, `BlackWidow V3 Pro`<br/>
+`Huntsman Elite`
 
 </td></tr>
 
 <tr><td>Keypad</td><td>
 
 
-
 </td></tr>
 
 <tr><td>Mouse</td><td>
 
-`DeathAdder V2 Pro`, `Mamba Tournament Edition`, `Viper Ultimate` (+ `Mouse Dock`)
+`DeathAdder V2 Pro`<br/>
+`Mamba Tournament Edition`<br/>
+`Viper Ultimate` (+ `Mouse Dock`)
 
 </td></tr>
 
