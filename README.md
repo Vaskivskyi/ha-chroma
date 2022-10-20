@@ -62,11 +62,24 @@ Some older versions of the Chroma SDK might be not compatible with the integrati
 </td></tr>
 </table>
 
+### SDK troubleshooting
+
+#### `[SSL: BAD_SIGNATURE] bad signature`
+This issue might appear when updating Synapse software between versions and can be observed on different versions. In this case, your HA instance won't be able to connect to Chroma SDK. At the same time, you won't be able to connect to SDK even locally using the local [https://chromasdk.io:54236/razer/chromasdk](https://chromasdk.io:54236/razer/chromasdk) alias (different browsers are showing a variety of SSL errors).
+
+ This issue can be fixed in the following way:
+- Open your Synapse software;
+- On the main `Synapse` tab switch from the `Dashboard` view to the `Modules` view (page with installed and available for installation modules);
+- Uninstall `Chroma Connect` (no need to close Synapse afterwords, just proceed to the next step);
+- Install `Chroma Connect` (it will ask to restart Synapse).
+
+Check the SDK again. It should work now.
+
 ## Supported devices
 
 This list provides only the models tested by me or other users. If your device is not listed yet but works well, please open a [Device Support](https://github.com/Vaskivskyi/ha-chroma/issues/new/choose) ticket with the device model and it will be added to the list.
 
-Some of the devices might be in the group which you would not expect. This is not related to the integration but to the Chroma SDK.
+Some of the devices might be in the group which you would not expect. This is not related to the integration but the Chroma SDK.
 
 <table>
 
