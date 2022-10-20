@@ -52,8 +52,14 @@ You can still use the service if your keyboard layout is not yet supported. E.g.
 Some older versions of the Chroma SDK might be not compatible with the integration. Unfortunately, I cannot test all the versions, so the following table contains only those I know about.
 
 <table>
-<tr><th>Supported</th><th>Not supported</th></tr>
-<tr><td>3.28.01</td><td>3.27.04 (issue <a href="https://github.com/Vaskivskyi/ha-chroma/issues/22">#22</a>)</td></tr>
+<tr><th>Supported</th><th>Possible issues</th><th>Not supported</th></tr>
+<tr><td>
+3.28.01 - 3.28.03
+</td><td>
+3.27.04 (issue <a href="https://github.com/Vaskivskyi/ha-chroma/issues/22">#22</a>)
+</td><td>
+
+</td></tr>
 </table>
 
 ## Supported devices
