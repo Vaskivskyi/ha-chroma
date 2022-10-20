@@ -71,7 +71,7 @@ This issue might appear when updating Synapse software between versions and can 
 - Open your Synapse software;
 - On the main `Synapse` tab switch from the `Dashboard` view to the `Modules` view (page with installed and available for installation modules);
 - Uninstall `Chroma Connect` (no need to close Synapse afterwords, just proceed to the next step);
-- Install `Chroma Connect` (it will ask to restart Synapse).
+- Install `Chroma Connect`.
 
 Check the SDK again. It should work now.
 
