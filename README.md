@@ -116,6 +116,7 @@ Services: `AuraConnect`
 
 `DeathAdder V2 Pro` ([link](https://amzn.to/3VrDAsg))<br/>
 `Mamba Tournament Edition` ([link](https://amzn.to/3RZBqgP))<br/>
+`Naga Left-Handed Edition`<br/>
 `Viper Ultimate` (+ `Mouse Dock`) ([link](https://amzn.to/3RXXt7w))
 
 </td></tr>
