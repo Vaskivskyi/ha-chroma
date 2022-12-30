@@ -88,22 +88,23 @@ Some of the devices might be in the group which you would not expect. This is no
 
 <tr><td>Chromalink</td><td>
 
-`Chroma Addressable RGB Controller` ([link*](https://amzn.to/3T0E4UG))<br />
-Mousepads: `Goliathus Extended Chroma` ([link](https://amzn.to/3VsDsZU))<br/>
+`Chroma Addressable RGB Controller` (<a href="https://amzn.to/3WyMNzb" rel="nofollow sponsored" target="_blank">link*</a>)<br />
+Mousepads: `Goliathus Extended Chroma` (<a href="https://amzn.to/3Gudkbl" rel="nofollow sponsored" target="_blank">link</a>)<br/>
 Services: `AuraConnect`
 
 </td></tr>
 
 <tr><td>Headset</td><td>
 
-`Kraken 7.1 V2` ([link](https://amzn.to/3VsN1rt)), `Kraken X USB` ([link](https://amzn.to/3rWZshC))
+`Kraken 7.1 V2` (<a href="https://amzn.to/3G78AqG" rel="nofollow sponsored" target="_blank">link</a>), `Kraken X USB` (<a href="https://amzn.to/3Z1QUWk" rel="nofollow sponsored" target="_blank">link</a>)
 
 </td></tr>
 
 <tr><td>Keyboard</td><td>
 
-`BlackWidow Chroma`, `BlackWidow V3 Pro` ([link](https://amzn.to/3CUAy8X))<br/>
-`Huntsman Elite` ([link](https://amzn.to/3rQ36tJ))
+`BlackWidow Chroma` (<a href="https://amzn.to/3hWc7QU" rel="nofollow sponsored" target="_blank">link</a>), `BlackWidow V3 Pro` (<a href="https://amzn.to/3i58M1Q" rel="nofollow sponsored" target="_blank">link</a>)<br/>
+`Cynosa Chroma` (<a href="https://amzn.to/3VFbI2S" rel="nofollow sponsored" target="_blank">link</a>)<br />
+`Huntsman Elite` (<a href="https://amzn.to/3C8fhb1" rel="nofollow sponsored" target="_blank">link</a>)
 
 </td></tr>
 
@@ -114,17 +115,16 @@ Services: `AuraConnect`
 
 <tr><td>Mouse</td><td>
 
-`DeathAdder V2 Pro` ([link](https://amzn.to/3VrDAsg))<br/>
-`Mamba Tournament Edition` ([link](https://amzn.to/3RZBqgP))<br/>
-`Naga Left-Handed Edition`<br/>
-`Viper Ultimate` (+ `Mouse Dock`) ([link](https://amzn.to/3RXXt7w))
-
+`Basilisk` (<a href="https://amzn.to/3jDzfE4" rel="nofollow sponsored" target="_blank">link</a>)<br/>
+`DeathAdder V2 Pro` (<a href="https://amzn.to/3jEJBnl" rel="nofollow sponsored" target="_blank">link</a>)<br/>
+`Mamba Tournament Edition` (<a href="https://amzn.to/3WCAguA" rel="nofollow sponsored" target="_blank">link</a>)<br/>
+`Viper Ultimate` (<a href="https://amzn.to/3G5kRMu" rel="nofollow sponsored" target="_blank">link</a>) (+ `Mouse Dock`) (<a href="https://amzn.to/3YXCyWN" rel="nofollow sponsored" target="_blank">link</a>)
 </td></tr>
 
 <tr><td>Mousepad</td><td>
 
-`Firefly V2` ([link](https://amzn.to/3S01V5w))<br />
-`Mouse Bungee V3 Chroma` ([link](https://amzn.to/3MAproL))
+`Firefly V2` (<a href="https://amzn.to/3FYiAm0" rel="nofollow sponsored" target="_blank">link</a>)<br />
+`Mouse Bungee V3 Chroma` (<a href="https://amzn.to/3ImsEbg" rel="nofollow sponsored" target="_blank">link</a>)
 
 </td></tr>
 
