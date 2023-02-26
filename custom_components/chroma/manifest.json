@@ -1,12 +1,12 @@
 {
   "domain": "chroma",
   "name": "Chroma",
-  "version": "0.2.1",
-  "documentation": "https://github.com/Vaskivskyi/ha-chroma",
-  "issue_tracker": "https://github.com/Vaskivskyi/ha-chroma/issues",
-  "config_flow": true,
   "codeowners": ["@vaskivskyi"],
+  "config_flow": true,
+  "documentation": "https://github.com/Vaskivskyi/ha-chroma",
   "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/Vaskivskyi/ha-chroma/issues",
+  "loggers": ["aiochroma"],
   "requirements": ["aiochroma==0.1.1"],
-  "loggers": ["aiochroma"]
+  "version": "0.2.1"
 }
