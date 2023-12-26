@@ -2,17 +2,17 @@
 
 from __future__ import annotations
 
-import aiohttp
 import logging
 from typing import Any
 
+import aiohttp
+from aiochroma import AIOChroma, ChromaError
 from homeassistant.const import CONF_HOST
 from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import ConfigEntryNotReady
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.helpers.update_coordinator import UpdateFailed
 
-from aiochroma import AIOChroma
 from .const import CONF_DEVICES, CONF_LAYOUT, DEFAULT_LAYOUT, SENSORS_TYPE_LIGHT
 
 _LOGGER = logging.getLogger(__name__)
@@ -70,7 +70,10 @@ class ChromaBridge:
     async def async_disconnect(self) -> None:
         """Disconnect from the device."""
 
-        await self._api.async_disconnect()
+        try:
+            await self._api.async_disconnect()
+        except ChromaError as ex:
+            pass
 
     async def async_get_available_sensors(self) -> dict[str, dict[str, Any]]:
         """Get a dictionary of available sensors."""

@@ -6,6 +6,7 @@ import logging
 from datetime import timedelta
 from typing import Any, Awaitable, Callable, TypeVar
 
+from aiochroma import ChromaError, Color
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import CONF_HOST, CONF_NAME
 from homeassistant.core import CALLBACK_TYPE, HomeAssistant, ServiceCall, callback
@@ -13,7 +14,6 @@ from homeassistant.exceptions import ConfigEntryNotReady
 from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
 
-from aiochroma import Color
 from .bridge import ChromaBridge
 from .const import (
     CONF_REQ_RELOAD,
@@ -115,8 +115,10 @@ class Chroma:
         )
 
         try:
+            _LOGGER.debug("Connecting to Chroma SDK on %s", self._host)
             await self._api.async_connect()
         except OSError as ex:
+            _LOGGER.debug("Failed to connect to Chroma SDK on %s", self._host)
             raise ConfigEntryNotReady from ex
 
         # Services -->
@@ -184,8 +186,11 @@ class Chroma:
     async def close(self) -> None:
         """Close the connection."""
 
-        if self._api is not None:
-            await self._api.async_disconnect()
+        if self._api is not None and self._api._api.connected:
+            try:
+                await self._api.async_disconnect()
+            except ChromaError as ex:
+                pass
         self._api = None
 
         for func in self._on_close:
