@@ -5,13 +5,13 @@ from __future__ import annotations
 import logging
 from typing import Any
 
+from aiochroma import Color
 from homeassistant.components.light import ColorMode, LightEntity
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
 
-from aiochroma import Color
 from .chroma import Chroma
 from .compilers import list_lights
 from .const import CONF_DEVICES
@@ -58,7 +58,7 @@ class ChromaLight(ChromaBinaryEntity, LightEntity):
     async def async_turn_off(self, **kwargs: Any) -> None:
         """Turn off the light."""
 
-        _LOGGER.debug(f"Command `turn_off` with args: `{kwargs}`")
+        _LOGGER.debug("Command `turn_off` with args: %s", kwargs)
 
         await self.api.async_turn_off(self._target)
 
@@ -67,7 +67,7 @@ class ChromaLight(ChromaBinaryEntity, LightEntity):
     async def async_turn_on(self, **kwargs: Any) -> None:
         """Turn on the light."""
 
-        _LOGGER.debug(f"Command `turn_on` with args: `{kwargs}`")
+        _LOGGER.debug("Command `turn_on` with args: %s", kwargs)
 
         color: int | None = None
         brightness: float | None = None

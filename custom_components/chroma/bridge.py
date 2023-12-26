@@ -25,12 +25,14 @@ class ChromaBridge:
         self,
         hass: HomeAssistant,
         configs: dict[str, Any],
-        options: dict[str, Any] = dict(),
+        options: dict[str, Any] | None = None,
     ) -> None:
         """Initialize bridge."""
 
         self._configs = configs.copy()
-        self._configs.update(options)
+
+        if isinstance(options, dict):
+            self._configs.update(options)
 
         session = async_get_clientsession(hass)
         self._api = self._get_api(self._configs, session)
@@ -72,7 +74,7 @@ class ChromaBridge:
 
         try:
             await self._api.async_disconnect()
-        except ChromaError as ex:
+        except ChromaError:
             pass
 
     async def async_get_available_sensors(self) -> dict[str, dict[str, Any]]:
@@ -92,7 +94,7 @@ class ChromaBridge:
 
         try:
             data = await self._api.async_get_state()
-            _LOGGER.debug(f"Sensors. Light data: {data}")
+            _LOGGER.debug("Sensors. Light data: %s", data)
         except Exception as ex:
             raise UpdateFailed(ex) from ex
 

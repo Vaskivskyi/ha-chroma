@@ -127,7 +127,7 @@ class Chroma:
 
             data = service.data
 
-            _LOGGER.debug(f"Calling service Send Message with parameters: {data}")
+            _LOGGER.debug("Calling service Send Message with parameters: %s", data)
 
             (r, g, b) = data.get("color")
             color = Color(r, g, b)
@@ -189,7 +189,7 @@ class Chroma:
         if self._api is not None and self._api._api.connected:
             try:
                 await self._api.async_disconnect()
-            except ChromaError as ex:
+            except ChromaError:
                 pass
         self._api = None
 
