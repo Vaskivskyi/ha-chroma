@@ -3,12 +3,15 @@ name: Build
 on:
   push:
     branches:
-      - dev
       - main
-  pull_request:
-    types: [edited, labeled, opened, reopened, synchronize]
+      - dev
+  pull_request: ~
   schedule:
     - cron: "0 0 * * *"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   hacs:
