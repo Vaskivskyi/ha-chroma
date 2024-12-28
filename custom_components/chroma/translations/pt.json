@@ -1,0 +1,65 @@
+{
+    "config": {
+        "step": {
+            "discovery": {
+                "description": "Como encontrar o seu dispositivo",
+                "data": {
+                    "host": "Nome do host / Endereço IP"
+                }
+            },
+            "devices": {
+                "description": "Dispositivos a controlar",
+                "data": {
+                    "devices": "Selecione os dispositivos"
+                }
+            },
+            "layout": {
+                "description": "Disposição do teclado",
+                "data": {
+                    "layout": "Selecione a disposição do teclado"
+                }
+            },
+            "name": {
+                "description": "Renomeie o seu dispositivo",
+                "data": {
+                    "name": "Deixe em branco para usar `ChromaSDK` como nome"
+                }
+            }
+        },
+        "error": {
+            "cannot_resolve_host": "Não foi possível resolver o nome do host. Experimente com o endereço IP"
+        }
+    },
+    "options": {
+        "step": {
+            "options": {
+                "description": "Selecione as configurações para alterar",
+                "data": {
+                    "devices": "Dispositivos a controlar",
+                    "layout": "Disposição do teclado (apenas se o controlo do teclado estiver ativado)"
+                }
+            },
+            "devices": {
+                "description": "Dispositivos a controlar",
+                "data": {
+                    "devices": "Selecione os dispositivos"
+                }
+            },
+            "layout": {
+                "description": "Disposição do teclado",
+                "data": {
+                    "layout": "Selecione a disposição do teclado"
+                }
+            },
+            "confirmation": {
+                "description": "Por favor, recarregue a integração",
+                "data": {
+                    "confirm": "Compreendo que preciso de recarregar a integração para aplicar a nova configuração. Para isso, clicarei no menu da integração (3 pontos) e pressionarei 'Recarregar'"
+                }
+            }
+        },
+        "error": {
+            "not_confirmed": "É necessário confirmar"
+        }
+    }
+}
