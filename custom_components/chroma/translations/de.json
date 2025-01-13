@@ -1,0 +1,65 @@
+{
+  "config": {
+    "step": {
+      "discovery": {
+        "description": "So finden Sie Ihr Gerät",
+        "data": {
+          "host": "Hostname / IP-Adresse"
+        }
+      },
+      "devices": {
+        "description": "Geräte zur Steuerung",
+        "data": {
+          "devices": "Geräte auswählen"
+        }
+      },
+      "layout": {
+        "description": "Tastaturlayout",
+        "data": {
+          "layout": "Tastaturlayout auswählen"
+        }
+      },
+      "name": {
+        "description": "Benennen Sie Ihr Gerät um",
+        "data": {
+          "name": "Leer lassen, um `ChromaSDK` als Namen zu verwenden"
+        }
+      }
+    },
+    "error": {
+      "cannot_resolve_host": "Hostname kann nicht aufgelöst werden. Versuchen Sie es mit der IP-Adresse"
+    }
+  },
+  "options": {
+    "step": {
+      "options": {
+        "description": "Konfigurationen auswählen, die geändert werden sollen",
+        "data": {
+          "devices": "Geräte zur Steuerung",
+          "layout": "Tastaturlayout (nur wenn die Tastatursteuerung aktiviert ist)"
+        }
+      },
+      "devices": {
+        "description": "Geräte zur Steuerung",
+        "data": {
+          "devices": "Geräte auswählen"
+        }
+      },
+      "layout": {
+        "description": "Tastaturlayout",
+        "data": {
+          "layout": "Tastaturlayout auswählen"
+        }
+      },
+      "confirmation": {
+        "description": "Bitte laden Sie die Integration neu",
+        "data": {
+          "confirm": "Ich verstehe, dass ich die Integration neu laden muss, um die neue Konfiguration anzuwenden. Dazu werde ich das Integrationsmenü (3 Punkte) öffnen und 'Neu laden' auswählen."
+        }
+      }
+    },
+    "error": {
+      "not_confirmed": "Sie müssen bestätigen"
+    }
+  }
+}
