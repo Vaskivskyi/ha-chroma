@@ -4,6 +4,9 @@
 
 ## Control your Chroma-enabled devices from Home Assistant
 
+> [!TIP]
+> As of July 2025, support for Razer Synapse 4 and the corresponding Chroma SDK is fixed. The basic RGB control is back to work with any compatible device. New features and more fixes will be added in the future.
+
 `Chroma` is a custom integration for Home Assistant to control your Razer Chroma-enabled devices using the [AIOChroma](https://github.com/Vaskivskyi/aiochroma) python library.
 
 A short presentation of the features can be found in this [YouTube video](https://www.youtube.com/watch?v=ytdS9JUWSb4).
@@ -116,7 +119,7 @@ Services: `AuraConnect`
 
 <tr><td>Mouse</td><td>
 
-`Basilisk` (<a href="https://amzn.to/3jDzfE4" rel="nofollow sponsored" target="_blank">link</a>)<br/>
+`Basilisk` (<a href="https://amzn.to/3jDzfE4" rel="nofollow sponsored" target="_blank">link</a>), `Basilisk V3 Pro` (<a href="https://amzn.to/3IndSmK" rel="nofollow sponsored" target="_blank">link</a>)<br/>
 `DeathAdder V2 Pro` (<a href="https://amzn.to/3jEJBnl" rel="nofollow sponsored" target="_blank">link</a>)<br/>
 `Mamba Tournament Edition` (<a href="https://amzn.to/3WCAguA" rel="nofollow sponsored" target="_blank">link</a>)<br/>
 `Viper Ultimate` (<a href="https://amzn.to/3G5kRMu" rel="nofollow sponsored" target="_blank">link</a>) (+ `Mouse Dock`) (<a href="https://amzn.to/3YXCyWN" rel="nofollow sponsored" target="_blank">link</a>)
@@ -126,6 +129,7 @@ Services: `AuraConnect`
 
 `Base Station V2 Chroma` (<a href="https://amzn.to/3x7NxjS" rel="nofollow sponsored" target="_blank">link</a>)<br />
 `Firefly V2` (<a href="https://amzn.to/3FYiAm0" rel="nofollow sponsored" target="_blank">link</a>)<br />
+`Monitor Stand Chroma` (<a href="https://amzn.to/4lpKKKr" rel="nofollow sponsored" target="_blank">link</a>)<br />
 `Mouse Bungee V3 Chroma` (<a href="https://amzn.to/3ImsEbg" rel="nofollow sponsored" target="_blank">link</a>)
 
 </td></tr>
